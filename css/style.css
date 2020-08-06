@@ -1101,7 +1101,7 @@ button.swiper-pagination-bullet {
 }
 
 .header-nav__item:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 20px;
 }
 
 .header-nav__link {
@@ -1111,7 +1111,7 @@ button.swiper-pagination-bullet {
 }
 
 .header__order-button {
-  margin-right: 15px;
+  margin-left: 15px;
   padding: 12px 16px;
   min-width: 120px;
   font-size: 14px;
@@ -1141,18 +1141,91 @@ button.swiper-pagination-bullet {
   color: inherit;
 }
 
-.hero-slider {
-  width: 800px;
+.hero {
+  padding: 30px 0;
 }
 
 .hero-slider__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
 }
 
-.hero__text {
-  margin-top: 50px;
+.hero-slider__slide::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#b9deed), to(#efefef));
+  background-image: linear-gradient(0deg, #b9deed, #efefef);
+  opacity: 0.1;
+  z-index: 99;
+}
+
+.hero-slider__btn {
+  height: 50px;
+  width: 50px;
+}
+
+.hero-slider__btn::after {
+  content: '';
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 55, 67, 0.7);
+}
+
+.hero-slider__btn--next::after {
+  background-image: url(../img/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-slider__btn--prev::after {
+  background-image: url(../img/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__title {
+  position: absolute;
+  margin: 0;
+  max-width: 350px;
+  padding: 20px 25px;
+  background-color: rgba(0, 55, 67, 0.7);
+  display: inline-block;
+  right: 0;
+  bottom: 100px;
+  z-index: 5;
+  border-radius: 20px 0 0 20px;
+  font-size: 36px;
+  line-height: 160%;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.hero__description {
+  margin: 0;
+  font-size: 26px;
+}
+
+.hero__image {
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
 }
 
 .socials-wrapper {

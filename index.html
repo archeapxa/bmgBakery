@@ -42,15 +42,10 @@
                 <a href="#" class="header-nav__link">Отзывы</a>
               </li>
               <li class="header-nav__item">
-                <a href="#" class="header-nav__link">Галерея</a>
-              </li>
-              <li class="header-nav__item">
                 <a href="#" class="header-nav__link">Контакты</a>
               </li>
             </ul>
           </nav>
-
-          <button class="header__order-button">Заказать</button>
 
           <div class="header__contacts-group contacts-group">
             <a href="tel:+380673253955" class="contacts-group__item"
@@ -59,6 +54,7 @@
             <a href="mailto:" class="contacts-group__item">mail@mail.ru</a>
           </div>
           <!-- /.header__contacts-group -->
+          <button class="header__order-button">Заказать</button>
         </div>
         <!-- /.row -->
       </div>
@@ -66,57 +62,72 @@
 
     <main>
       <section class="section hero">
-        <div class="container">
-          <div class="row">
-            <div class="swiper-container hero-slider">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper hero-slider__wrapper">
-                <div class="swiper-slide hero-slider__slide">
-                  <div class="hero__text">
-                    <h1 class="hero__title">Торты</h1>
-                    <p class="hero__description">ручной работы</p>
-                  </div>
-                  <!-- /.hero-text -->
-                  <img src="img/hero/slider-img-1.jpg" alt="" />
-                </div>
-                <!-- Slides -->
+        <!-- <div class="container"> -->
+        <div class="row">
+          <div class="swiper-container hero-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper hero-slider__wrapper">
+              <div class="swiper-slide hero-slider__slide">
+                <h1 class="hero__title">Торты и десерты ручной работы</h1>
+                <img
+                  class="hero__image"
+                  src="img/hero/slider-image-1.jpg"
+                  alt="Cake image"
+                />
               </div>
-              <!-- slider wrapper -->
-              <div class="swiper-button-prev hero-slider__btn-prev"></div>
-              <!-- prev -->
-              <div class="swiper-button-next hero-slider__btn-next"></div>
-              <!-- next -->
+              <div class="swiper-slide hero-slider__slide">
+                <img
+                  class="hero__image"
+                  src="img/hero/slider-image-2.jpg"
+                  alt="Cake image"
+                />
+              </div>
+              <div class="swiper-slide hero-slider__slide">
+                <img
+                  class="hero__image"
+                  src="img/hero/slider-image-3.jpg"
+                  alt="Cake image"
+                />
+              </div>
+              <!-- ./slides -->
             </div>
-            <div class="socials-wrapper">
-              <a
-                href="https://www.facebook.com/BeMyGuestBakery"
-                class="socials-link"
-                ><img
-                  class="socials-icon"
-                  src="img/hero/facebook.svg"
-                  alt="Icon: Facebook"
-              /></a>
-              <a
-                href="http://instagram.com/bemyguestbakery"
-                class="socials-link"
-                ><img
-                  class="socials-icon"
-                  src="img/hero/instagram.svg"
-                  alt="Icon: Instagram"
-              /></a>
-              <a
-                href="https://g.page/BeMyGuestBakery?share"
-                class="socials-link"
-                ><img
-                  class="socials-icon"
-                  src="img/hero/google-maps.svg"
-                  alt="Icon: Google Maps"
-              /></a>
-            </div>
-            <!-- /.socials-wrapper -->
+            <!-- ./slider wrapper -->
+            <div
+              class="swiper-button-prev hero-slider__btn hero-slider__btn--prev"
+            ></div>
+            <!-- prev -->
+            <div
+              class="swiper-button-next hero-slider__btn hero-slider__btn--next"
+            ></div>
+
+            <!-- next -->
           </div>
-          <!-- /.row -->
+          <!-- <div class="socials-wrapper">
+            <a
+              href="https://www.facebook.com/BeMyGuestBakery"
+              class="socials-link"
+              ><img
+                class="socials-icon"
+                src="img/hero/facebook.svg"
+                alt="Icon: Facebook"
+            /></a>
+            <a href="http://instagram.com/bemyguestbakery" class="socials-link"
+              ><img
+                class="socials-icon"
+                src="img/hero/instagram.svg"
+                alt="Icon: Instagram"
+            /></a>
+            <a href="https://g.page/BeMyGuestBakery?share" class="socials-link"
+              ><img
+                class="socials-icon"
+                src="img/hero/google-maps.svg"
+                alt="Icon: Google Maps"
+            /></a>
+          </div> -->
+          <!-- /.socials-wrapper -->
         </div>
+        <!-- /.row -->
+        <!-- </div> -->
         <!-- ./container -->
       </section>
     </main>
