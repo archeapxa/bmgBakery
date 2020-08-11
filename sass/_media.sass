@@ -3,18 +3,48 @@
     &__title
       font-size: 30px
       line-height: 150%
-      max-width: 290px
+      max-width: 320px
 @media screen and ( max-width: 992px )
   .header
+    padding: 15px 0
+    &__logo
+      width: 70px
     &-nav
       display: none
     &__contacts
       &-group
         margin-left: auto
+  .hero
+    &__image
+      height: calc(100vh - 109px)
 @media screen and ( max-width: 767px )
+  .header
+    padding: 10px 0
+    &__logo
+      width: 50px
+    &__order-button
+      display: none
   .hero
     &__title
       font-size: 24px
-      max-width: 235px
+      max-width: 260px
       padding: 15px 20px
+      bottom: 5%
+    &__button
+      margin-top: 10px
+      font-size: 18px
+    &__image
+      height: calc(100vh - 78px)
+@media screen and ( max-width: 640px )
+  .hero
+    &__title
+      font-size: 32px
+      max-width: 340px
+@media screen and ( max-width: 460px )
+  .hero
+    &__title
+      font-size: 24px
+      max-width: 270px
+  
+  
   

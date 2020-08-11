@@ -375,6 +375,18 @@ img {
   position: relative;
 }
 
+.button {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #00A1C2;
+  color: #00A1C2;
+  border-radius: 4px;
+  background-color: #e6fbff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 /**
  * Swiper 6.1.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1115,14 +1127,6 @@ button.swiper-pagination-bullet {
   margin-left: 15px;
   padding: 12px 16px;
   min-width: 120px;
-  font-size: 14px;
-  font-weight: 600;
-  border: 2px solid #00A1C2;
-  color: #00A1C2;
-  border-radius: 4px;
-  background-color: #e6fbff;
-  text-transform: uppercase;
-  cursor: pointer;
 }
 
 .contacts-group {
@@ -1143,7 +1147,7 @@ button.swiper-pagination-bullet {
 }
 
 .hero {
-  padding: 10px 0 30px 0;
+  padding: 0;
 }
 
 .hero-slider__slide {
@@ -1203,18 +1207,19 @@ button.swiper-pagination-bullet {
 .hero__title {
   position: absolute;
   margin: 0;
-  max-width: 350px;
+  max-width: 370px;
   padding: 20px 25px;
   background-color: rgba(0, 55, 67, 0.7);
   display: inline-block;
   right: 0;
   bottom: 10%;
-  z-index: 5;
+  z-index: 99;
   border-radius: 20px 0 0 20px;
   font-size: 36px;
-  line-height: 160%;
+  line-height: 150%;
   color: #ffffff;
   font-weight: 500;
+  text-align: left;
 }
 
 .hero__description {
@@ -1223,11 +1228,22 @@ button.swiper-pagination-bullet {
 }
 
 .hero__image {
-  height: calc(100vh - 191px);
+  height: calc(100vh - 151px);
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+}
+
+.hero__button {
+  padding: 10px 28px;
+  text-transform: uppercase;
+  background-color: #e6fbff;
+  border: 2px solid #00A1C2;
+  border-radius: 4px;
+  width: 95%;
+  font-size: 26px;
+  margin-top: 20px;
 }
 
 .socials-wrapper {
@@ -1259,23 +1275,63 @@ button.swiper-pagination-bullet {
   .hero__title {
     font-size: 30px;
     line-height: 150%;
-    max-width: 290px;
+    max-width: 320px;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .header {
+    padding: 15px 0;
+  }
+  .header__logo {
+    width: 70px;
+  }
   .header-nav {
     display: none;
   }
   .header__contacts-group {
     margin-left: auto;
   }
+  .hero__image {
+    height: calc(100vh - 109px);
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    padding: 10px 0;
+  }
+  .header__logo {
+    width: 50px;
+  }
+  .header__order-button {
+    display: none;
+  }
   .hero__title {
     font-size: 24px;
-    max-width: 235px;
+    max-width: 260px;
     padding: 15px 20px;
+    bottom: 5%;
+  }
+  .hero__button {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .hero__image {
+    height: calc(100vh - 78px);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero__title {
+    font-size: 32px;
+    max-width: 340px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .hero__title {
+    font-size: 24px;
+    max-width: 270px;
   }
 }
