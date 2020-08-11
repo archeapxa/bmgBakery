@@ -391,7 +391,7 @@ img {
   border: 2px solid #00A1C2;
   color: #00A1C2;
   border-radius: 4px;
-  background-color: #e6fbff;
+  background-color: #f2fdff;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -419,6 +419,11 @@ img {
 
 .socials-icon {
   width: 30px;
+}
+
+.section-title {
+  font-size: 42px;
+  margin: 0;
 }
 
 /**
@@ -1208,8 +1213,8 @@ button.swiper-pagination-bullet {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#b9deed), to(#efefef));
-  background-image: linear-gradient(0deg, #b9deed, #efefef);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0d171b), to(#efefef));
+  background-image: linear-gradient(0deg, #0d171b, #efefef);
   opacity: 0.1;
   z-index: 99;
 }
@@ -1273,12 +1278,69 @@ button.swiper-pagination-bullet {
 .hero__button {
   padding: 10px 28px;
   text-transform: uppercase;
-  background-color: #e6fbff;
+  background-color: #f2fdff;
   border: 2px solid #00A1C2;
   border-radius: 4px;
   width: 95%;
   font-size: 26px;
   margin-top: 20px;
+}
+
+.about-us {
+  padding: 40px 0 30px;
+  background-color: #f2fdff;
+}
+
+.about-us__container {
+  background: url("../img/about-us/cake.png") no-repeat;
+  background-position: right center;
+  background-size: 400px;
+}
+
+.about-us__section-title {
+  margin-bottom: 20px;
+  color: #00A1C2;
+}
+
+.about-us__text {
+  max-width: 700px;
+  margin-bottom: 20px;
+  line-height: 140%;
+}
+
+.about-us__text:last-of-type {
+  margin-bottom: 30px;
+}
+
+.about-us__info-list {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 150px;
+  max-width: 650px;
+}
+
+.about-us__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-us__info-icon {
+  height: 50px;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 1400px) {
