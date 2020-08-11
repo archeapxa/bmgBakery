@@ -1,11 +1,14 @@
 .hero
-  padding: 30px 0
+  padding: 10px 0 30px 0
+  // height: 60vh
   &-slider
+    // height: 700px
     &__slide
       display: flex
       align-items: center
       justify-content: space-evenly
       position: relative
+      // height: 100%
       // width: 80%
       &::before
         content: ''
@@ -48,7 +51,7 @@
     background-color: rgba(darken($primary, 25%), 0.7)
     display: inline-block
     right: 0
-    bottom: 100px
+    bottom: 10%
     z-index: 5
     border-radius: 20px 0 0 20px
     font-size: 36px
@@ -60,7 +63,10 @@
     margin: 0
     font-size: 26px
   &__image
-    height: 700px
+    height: calc(100vh - 191px)
+    // max-height: 600px
+    // min-height: 500px
+    width: 100%
     object-fit: cover
     position: relative
 

@@ -359,6 +359,7 @@ img {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  width: 95%;
 }
 
 .row {
@@ -1142,7 +1143,7 @@ button.swiper-pagination-bullet {
 }
 
 .hero {
-  padding: 30px 0;
+  padding: 10px 0 30px 0;
 }
 
 .hero-slider__slide {
@@ -1207,7 +1208,7 @@ button.swiper-pagination-bullet {
   background-color: rgba(0, 55, 67, 0.7);
   display: inline-block;
   right: 0;
-  bottom: 100px;
+  bottom: 10%;
   z-index: 5;
   border-radius: 20px 0 0 20px;
   font-size: 36px;
@@ -1222,7 +1223,8 @@ button.swiper-pagination-bullet {
 }
 
 .hero__image {
-  height: 700px;
+  height: calc(100vh - 191px);
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
@@ -1251,4 +1253,29 @@ button.swiper-pagination-bullet {
 
 .socials-icon {
   width: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  .hero__title {
+    font-size: 30px;
+    line-height: 150%;
+    max-width: 290px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-nav {
+    display: none;
+  }
+  .header__contacts-group {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 24px;
+    max-width: 235px;
+    padding: 15px 20px;
+  }
 }
