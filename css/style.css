@@ -396,6 +396,31 @@ img {
   cursor: pointer;
 }
 
+.socials-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.socials-link {
+  margin-top: 10px;
+}
+
+.socials-icon {
+  width: 30px;
+}
+
 /**
  * Swiper 6.1.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1254,31 +1279,6 @@ button.swiper-pagination-bullet {
   width: 95%;
   font-size: 26px;
   margin-top: 20px;
-}
-
-.socials-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 5;
-}
-
-.socials-link {
-  margin-top: 10px;
-}
-
-.socials-icon {
-  width: 30px;
 }
 
 @media screen and (max-width: 1400px) {
