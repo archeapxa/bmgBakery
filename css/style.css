@@ -360,6 +360,7 @@ img {
   max-width: 1140px;
   margin: 0 auto;
   width: 95%;
+  position: relative;
 }
 
 .row {
@@ -400,21 +401,17 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
   z-index: 5;
 }
 
 .socials-link {
-  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .socials-icon {
@@ -1160,6 +1157,9 @@ button.swiper-pagination-bullet {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .header__order-button {
@@ -1399,6 +1399,12 @@ button.swiper-pagination-bullet {
   }
   .about-us__text:last-of-type {
     max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-nav__link:hover {
+    border-bottom: 2px solid #00A1C2;
   }
 }
 
