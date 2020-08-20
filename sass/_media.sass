@@ -4,6 +4,10 @@
       font-size: 30px
       line-height: 150%
       max-width: 320px
+  .delivery
+    &__description
+      &-block
+        max-width: 600px
 @media screen and ( max-width: 1200px )
   .container
     max-width: 940px
@@ -46,6 +50,18 @@
       left: 200px
     &-icon
       width: 25px
+  .delivery
+    font-size: 14px
+    &__description
+      &-block
+        max-width: 420px
+    &__list
+      max-width: 250px
+      &-item
+        &-number
+          margin-right: 10px
+        &-title
+          font-size: 16px
 @media screen and ( min-width: 992px )
   .header
     &-nav
@@ -104,6 +120,20 @@
     &__text
       &:nth-of-type(n)        
         max-width: 300px
+  .delivery
+    &__row
+      flex-direction: column-reverse
+    &__description
+      &-block
+        max-width: 100%
+    &__list
+      max-width: 100%
+      min-height: 300px
+      margin-bottom: 40px
+      &-item
+        // align-items: center
+        &-description
+          max-width: 100%
 @media screen and ( max-width: 640px )
   .container
     width: 90%
