@@ -1526,8 +1526,22 @@ button.swiper-pagination-bullet {
   }
   .about-us__info-list {
     max-height: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-us__info-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
   .about-us__info-item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 16px;
     font-weight: 500;
   }
