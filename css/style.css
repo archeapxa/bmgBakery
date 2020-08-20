@@ -418,7 +418,12 @@ img {
   width: 30px;
 }
 
+.section {
+  padding: 40px 0 30px;
+}
+
 .section-title {
+  color: #00A1C2;
   font-size: 42px;
   margin: 0;
 }
@@ -1343,6 +1348,28 @@ button.swiper-pagination-bullet {
 .about-us__info-icon {
   height: 50px;
   margin-right: 20px;
+}
+
+.delivery {
+  background-color: #f2fdff;
+}
+
+.delivery__section-title {
+  margin-bottom: 30px;
+}
+
+.delivery__sub-title {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #00A1C2;
+}
+
+.delivery__description-block {
+  max-width: 500px;
+}
+
+.delivery__text {
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1400px) {
