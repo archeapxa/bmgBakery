@@ -405,8 +405,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  right: 0;
-  top: 0;
+  left: 350px;
+  top: 15px;
   z-index: 5;
 }
 
@@ -1400,6 +1400,12 @@ button.swiper-pagination-bullet {
   .about-us__text:last-of-type {
     max-width: 600px;
   }
+  .socials-wrapper {
+    left: 200px;
+  }
+  .socials-icon {
+    width: 25px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1495,11 +1501,23 @@ button.swiper-pagination-bullet {
   .about-us__text:nth-of-type(n) {
     max-width: none;
   }
+  .socials-wrapper {
+    top: 20px;
+    left: auto;
+    right: 0;
+  }
+  .socials-icon {
+    width: 20px;
+  }
 }
 
 @media screen and (max-width: 460px) {
   .section-title {
     font-size: 32px;
+  }
+  .hero__title {
+    font-size: 28px;
+    max-width: 300px;
   }
   .about-us__row {
     -webkit-box-align: center;
@@ -1512,5 +1530,11 @@ button.swiper-pagination-bullet {
   .about-us__info-item {
     font-size: 16px;
     font-weight: 500;
+  }
+  .socials-wrapper {
+    top: 10px;
+  }
+  .socials-icon {
+    width: 20px;
   }
 }
