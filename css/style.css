@@ -1412,6 +1412,17 @@ button.swiper-pagination-bullet {
   .header-nav__link:hover {
     border-bottom: 2px solid #00A1C2;
   }
+  .contacts-group__item:hover {
+    color: #00A1C2;
+  }
+  .button {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .button:hover {
+    color: #006276;
+    border-color: #006276;
+  }
 }
 
 @media screen and (max-width: 767px) {
