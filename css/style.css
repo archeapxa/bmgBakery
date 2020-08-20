@@ -423,7 +423,7 @@ img {
 }
 
 .section-title {
-  color: #00A1C2;
+  color: #006276;
   font-size: 42px;
   margin: 0;
 }
@@ -1304,7 +1304,6 @@ button.swiper-pagination-bullet {
 
 .about-us__section-title {
   margin-bottom: 20px;
-  color: #00A1C2;
 }
 
 .about-us__text {
@@ -1361,15 +1360,89 @@ button.swiper-pagination-bullet {
 .delivery__sub-title {
   margin: 0;
   margin-bottom: 10px;
-  color: #00A1C2;
+  color: #006276;
 }
 
 .delivery__description-block {
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .delivery__text {
   margin-bottom: 30px;
+}
+
+.delivery__list {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 400px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.delivery__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.delivery__list-item-text {
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.delivery__list-item-title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 20px;
+  color: #006276;
+}
+
+.delivery__list-item-number {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #006276;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #006276;
+  margin-right: 20px;
+}
+
+.delivery__list-item-description {
+  display: block;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 1400px) {

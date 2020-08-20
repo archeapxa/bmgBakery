@@ -1,13 +1,55 @@
 .delivery
   background-color: $primary-light
+  &__row
   &__section-title
     margin-bottom: 30px
   &__sub-title
     margin: 0
     margin-bottom: 10px
-    color: $primary
+    color: $primary-dark
   &__description
     &-block
-      max-width: 500px
+      max-width: 700px
   &__text
     margin-bottom: 30px
+  &__list
+    list-style: none
+    padding: 0
+    display: flex
+    flex-direction: column
+    min-height: 400px
+    justify-content: space-evenly
+    &-item
+      // margin-bottom: 40px
+      display: flex
+      align-items: flex-start
+      // color: $primary-dark
+      &-text
+        max-width: 350px
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: auto
+      &-title
+        margin-top: 0
+        margin-bottom: 14px
+        font-size: 20px
+        color: $primary-dark
+      &-number
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        height: 50px
+        width: 50px
+        border: 2px solid $primary-dark
+        border-radius: 50%
+        font-size: 24px
+        font-weight: 500
+        color: $primary-dark
+        margin-right: 20px
+      &-description
+        display: block
+        text-align: center
+        font-style: normal
+        font-weight: normal
+      
