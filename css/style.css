@@ -356,6 +356,7 @@ html {
   background-color: #ffffff;
   color: #333333;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 img {
