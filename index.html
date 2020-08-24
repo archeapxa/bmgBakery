@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>BeMyGuest Bakery</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -364,6 +364,33 @@
         <!-- /.container -->
       </section>
       <!-- /.section reviews -->
+      <section class="section contact-us">
+        <div class="container">
+          <h2 class="section-title contact-us__section-title">Связаться с нами</h2>
+          <img src="img/logo.svg" alt="Be My Guest Logo" class="logo contact-us__logo">
+          <form action="#" class="contact-us__form">
+            <h4 class="form__title">Заполните форму для заказа</h4>
+            <span class="form__text">И мы свяжемся с вами</span>
+            <div class="form__input-block">
+              <div class="input-group">
+                <label for="contact-us__name" class="form__input-title">Введите Ваше имя</label>
+                <input id="contact-us__name" type="text" class="form__input-item" placeholder="Ваше имя" required>
+              </div>
+              <!-- /.input-group -->
+              <div class="input-group">
+                <label for="contact-us__phone" class="form__input-title">Введите Ваш номер телефона</label>
+                <input id="contact-us__phone" type="tel" class="form__input-item" placeholder="Ваш телефон" required>
+              </div>
+              <!-- /.input-group -->
+            </div>
+            <!-- /.form__input-block -->
+            <button type="submit">Заказать</button>
+            <input id="contact-us__policy" type="checkbox"> <label for="contact-us__policy">Я согласен с условиями обработки персональных данных</label>
+          </form>
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section contact-us -->
     </main>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

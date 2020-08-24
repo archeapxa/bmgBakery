@@ -425,6 +425,7 @@ img {
 .section-title {
   color: #006276;
   font-size: 42px;
+  font-weight: 800;
   margin: 0;
 }
 
@@ -1514,6 +1515,11 @@ button.swiper-pagination-bullet {
 .reviews__text {
   line-height: 160%;
   margin: 0;
+}
+
+.contact-us {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(242, 253, 255, 0.9)), to(rgba(242, 253, 255, 0.6))), url("../img/contact-us/bg-cake.png") center right 25%/auto 80% no-repeat;
+  background: linear-gradient(to right, rgba(242, 253, 255, 0.9), rgba(242, 253, 255, 0.6)), url("../img/contact-us/bg-cake.png") center right 25%/auto 80% no-repeat;
 }
 
 @media screen and (max-width: 1400px) {
