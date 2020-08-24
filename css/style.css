@@ -1528,6 +1528,15 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 1200px) {
+  .header-nav__link {
+    font-size: 14px;
+  }
+  .header-nav__item:not(:last-child) {
+    margin-right: 15px;
+  }
+  .contacts-group__item {
+    font-size: 12px;
+  }
   .container {
     max-width: 940px;
   }
