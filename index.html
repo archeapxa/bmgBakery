@@ -183,7 +183,7 @@
             </ul>
           </div>
           <!-- ./about-us__row -->
-          <div class="socials-wrapper">
+          <div class="socials-wrapper about-us__socials">
             <a
               href="https://www.facebook.com/BeMyGuestBakery"
               class="socials-link"
@@ -415,40 +415,41 @@
       </section>
       <!-- /.section reviews -->
       <section class="section contact-us">
-        <div class="container">
+        <div class="container contact-us__container">
           <h2 class="section-title contact-us__section-title">
             Связаться с нами
           </h2>
-          <img
-            src="img/logo.svg"
-            alt="Be My Guest Logo"
-            class="logo contact-us__logo"
-          />
-          <form action="#" class="contact-us__form">
+          <a href="index.html" class="contact-us__logo logo"
+            ><img
+              src="img/logo.svg"
+              alt="Be My Guest Logo"
+              class="contact-us__logo-img"
+          /></a>
+          <form action="#" class="form contact-us__form">
             <h4 class="form__title">Заполните форму для заказа</h4>
             <span class="form__text">И мы свяжемся с вами</span>
             <div class="form__input-block">
-              <div class="input-group">
-                <label for="contact-us__name" class="form__input-title"
+              <div class="form__input-group input-group">
+                <label for="contact-us__name" class="form__input-label"
                   >Введите Ваше имя</label
                 >
                 <input
                   id="contact-us__name"
                   type="text"
-                  class="form__input-item"
+                  class="input form__input-item"
                   placeholder="Ваше имя"
                   required
                 />
               </div>
               <!-- /.input-group -->
-              <div class="input-group">
-                <label for="contact-us__phone" class="form__input-title"
+              <div class="form__input-group input-group">
+                <label for="contact-us__phone" class="form__input-label"
                   >Введите Ваш номер телефона</label
                 >
                 <input
                   id="contact-us__phone"
                   type="tel"
-                  class="form__input-item"
+                  class="input form__input-item"
                   placeholder="Ваш телефон"
                   required
                 />
@@ -456,12 +457,44 @@
               <!-- /.input-group -->
             </div>
             <!-- /.form__input-block -->
-            <button type="submit">Заказать</button>
-            <input id="contact-us__policy" type="checkbox" />
-            <label for="contact-us__policy"
-              >Я согласен с условиями обработки персональных данных</label
-            >
+            <button class="button form__button" type="submit">Заказать</button>
+            <div class="form__policy-group">
+              <input
+                class="form__policy-checkbox"
+                id="contact-us__policy"
+                type="checkbox"
+                required
+                checked
+              />
+              <label class="form__policy-label" for="contact-us__policy"
+                >Я соглашаюсь с обработкой данных</label
+              >
+            </div>
+            <!-- /.form__policy-group -->
           </form>
+          <div class="contact-us__socials socials-wrapper">
+            <a
+              href="https://www.facebook.com/BeMyGuestBakery"
+              class="socials-link"
+              ><img
+                class="contact-us__socials-icon socials-icon"
+                src="img/facebook.svg"
+                alt="Icon: Facebook"
+            /></a>
+            <a href="http://instagram.com/bemyguestbakery" class="socials-link"
+              ><img
+                class="contact-us__socials-icon socials-icon"
+                src="img/instagram.svg"
+                alt="Icon: Instagram"
+            /></a>
+            <a href="https://g.page/BeMyGuestBakery?share" class="socials-link"
+              ><img
+                class="contact-us__socials-icon socials-icon"
+                src="img/google-maps.svg"
+                alt="Icon: Google Maps"
+            /></a>
+          </div>
+          <!-- /.socials-wrapper -->
         </div>
         <!-- /.container -->
       </section>

@@ -1,3 +1,16 @@
 .contact-us
   // padding: 300px 0 300px
-  background: linear-gradient(to right, rgba($primary-light, 0.9), rgba($primary-light, 0.6)), url("../img/contact-us/bg-cake.png") center right 25% / auto 80% no-repeat
+  background: $primary-light
+  &__container
+    background: linear-gradient(to left, rgba($primary-light, 0.5), rgba($primary-light, 1)), url("../img/contact-us/bg-cake.png") center right 50px / auto 100% no-repeat
+  &__section-title
+    margin-bottom: 20px
+  &__logo
+    width: 80px
+    margin-bottom: 40px
+  &__socials
+    right: 0
+    bottom: 0
+    flex-direction: column
+    &-icon
+      margin-top: 10px

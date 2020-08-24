@@ -27,6 +27,8 @@
     &__text
       font-size: 14px    
 @media screen and ( max-width: 992px )
+  .section
+    padding: 30px 0 30px
   .container
     max-width: 740px
   .header
@@ -55,9 +57,10 @@
         max-width: 350px
       &:last-of-type
         max-width: 600px
+    &__socials
+      left: 200px
   .socials
     &-wrapper
-      left: 200px
     &-icon
       width: 25px
   .delivery
@@ -72,6 +75,9 @@
           margin-right: 10px
         &-title
           font-size: 16px
+  .contact-us
+    &__container
+      background-position: center right 30px
 @media screen and ( min-width: 992px )
   .header
     &-nav
@@ -90,6 +96,8 @@
       color: $primary-dark
       border-color: $primary-dark
 @media screen and ( max-width: 767px )
+  .section-title
+    font-size: 36px
   .container
     max-width: 540px
   .header
@@ -147,6 +155,20 @@
   .reviews
     &__text
       font-size: 14px
+  .contact-us
+    background: linear-gradient(to left, rgba($primary-light, 0.5), rgba($primary-light, 1)), url("../img/contact-us/bg-cake.png") center right 50px / auto 100% no-repeat
+    &__container
+      background: none
+    // &__socials
+    //   bottom: auto
+    //   top: 0
+  .form
+    &__input
+      &-block
+        flex-direction: column
+      &-group
+        &:first-child
+          margin-bottom: 20px
 @media screen and ( max-width: 640px )
   .container
     width: 90%
@@ -167,16 +189,16 @@
     &__text
       &:nth-of-type(n)        
         max-width: none
-  .socials
-    &-wrapper
+    &__socials
       top: 20px
       left: auto
       right: 0
+  .socials
     &-icon
       width: 20px
 @media screen and ( max-width: 460px )
   .section-title
-    font-size: 32px
+    font-size: 28px
   .hero
     &__title
       font-size: 28px
@@ -196,9 +218,10 @@
         flex-direction: column
         font-size: 16px
         font-weight: 500
+    &__socials
+      top: 10px
   .socials
     &-wrapper
-      top: 10px
     &-icon
       width: 20px
   .reviews

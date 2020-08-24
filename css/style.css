@@ -346,6 +346,12 @@ template {
           box-sizing: border-box;
 }
 
+*:focus {
+  -webkit-box-shadow: 0 0 1pt 1pt #00A1C2;
+          box-shadow: 0 0 1pt 1pt #00A1C2;
+  outline: none;
+}
+
 html {
   background-color: #ffffff;
   color: #333333;
@@ -405,8 +411,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 350px;
-  top: 15px;
   z-index: 5;
 }
 
@@ -419,7 +423,7 @@ img {
 }
 
 .section {
-  padding: 40px 0 30px;
+  padding: 50px 0 50px;
 }
 
 .section-title {
@@ -1293,7 +1297,6 @@ button.swiper-pagination-bullet {
 }
 
 .about-us {
-  padding: 40px 0 30px;
   background-color: #f2fdff;
 }
 
@@ -1348,6 +1351,11 @@ button.swiper-pagination-bullet {
 .about-us__info-icon {
   height: 50px;
   margin-right: 20px;
+}
+
+.about-us__socials {
+  left: 350px;
+  top: 15px;
 }
 
 .delivery {
@@ -1518,8 +1526,112 @@ button.swiper-pagination-bullet {
 }
 
 .contact-us {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(242, 253, 255, 0.9)), to(rgba(242, 253, 255, 0.6))), url("../img/contact-us/bg-cake.png") center right 25%/auto 80% no-repeat;
-  background: linear-gradient(to right, rgba(242, 253, 255, 0.9), rgba(242, 253, 255, 0.6)), url("../img/contact-us/bg-cake.png") center right 25%/auto 80% no-repeat;
+  background: #f2fdff;
+}
+
+.contact-us__container {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(242, 253, 255, 0.5)), to(#f2fdff)), url("../img/contact-us/bg-cake.png") center right 50px/auto 100% no-repeat;
+  background: linear-gradient(to left, rgba(242, 253, 255, 0.5), #f2fdff), url("../img/contact-us/bg-cake.png") center right 50px/auto 100% no-repeat;
+}
+
+.contact-us__section-title {
+  margin-bottom: 20px;
+}
+
+.contact-us__logo {
+  width: 80px;
+  margin-bottom: 40px;
+}
+
+.contact-us__socials {
+  right: 0;
+  bottom: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-us__socials-icon {
+  margin-top: 10px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.form__title {
+  margin: 0;
+  color: #006276;
+  margin-bottom: 10px;
+}
+
+.form__text {
+  margin-bottom: 35px;
+}
+
+.form__input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.form__input-label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #006276;
+}
+
+.form__button {
+  margin-bottom: 10px;
+}
+
+.form__policy-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__policy-checkbox {
+  margin-right: 10px;
+}
+
+.form__policy-label {
+  font-size: 12px;
+}
+
+.form__input-group:first-child {
+  margin-right: 50px;
+}
+
+.input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #00A1C2;
+  max-width: 250px;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (max-width: 1400px) {
@@ -1555,6 +1667,9 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 992px) {
+  .section {
+    padding: 30px 0 30px;
+  }
   .container {
     max-width: 740px;
   }
@@ -1589,7 +1704,7 @@ button.swiper-pagination-bullet {
   .about-us__text:last-of-type {
     max-width: 600px;
   }
-  .socials-wrapper {
+  .about-us__socials {
     left: 200px;
   }
   .socials-icon {
@@ -1609,6 +1724,9 @@ button.swiper-pagination-bullet {
   }
   .delivery__list-item-title {
     font-size: 16px;
+  }
+  .contact-us__container {
+    background-position: center right 30px;
   }
 }
 
@@ -1630,6 +1748,9 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 36px;
+  }
   .container {
     max-width: 540px;
   }
@@ -1708,6 +1829,22 @@ button.swiper-pagination-bullet {
   .reviews__text {
     font-size: 14px;
   }
+  .contact-us {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(242, 253, 255, 0.5)), to(#f2fdff)), url("../img/contact-us/bg-cake.png") center right 50px/auto 100% no-repeat;
+    background: linear-gradient(to left, rgba(242, 253, 255, 0.5), #f2fdff), url("../img/contact-us/bg-cake.png") center right 50px/auto 100% no-repeat;
+  }
+  .contact-us__container {
+    background: none;
+  }
+  .form__input-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__input-group:first-child {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1736,7 +1873,7 @@ button.swiper-pagination-bullet {
   .about-us__text:nth-of-type(n) {
     max-width: none;
   }
-  .socials-wrapper {
+  .about-us__socials {
     top: 20px;
     left: auto;
     right: 0;
@@ -1748,7 +1885,7 @@ button.swiper-pagination-bullet {
 
 @media screen and (max-width: 460px) {
   .section-title {
-    font-size: 32px;
+    font-size: 28px;
   }
   .hero__title {
     font-size: 28px;
@@ -1780,7 +1917,7 @@ button.swiper-pagination-bullet {
     font-size: 16px;
     font-weight: 500;
   }
-  .socials-wrapper {
+  .about-us__socials {
     top: 10px;
   }
   .socials-icon {

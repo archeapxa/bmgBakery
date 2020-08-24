@@ -1,5 +1,9 @@
 *, *::before, *::after
   box-sizing: border-box
+*:focus
+  // outline: 1px solid $primary
+  box-shadow: 0 0 1pt 1pt $primary
+  outline: none
 html
   background-color: $light
   color: $dark-text
@@ -35,15 +39,13 @@ img
     // flex-direction: column
     align-items: center
     position: absolute
-    left: 350px
-    top: 15px
     z-index: 5
   &-link
     margin-left: 20px
   &-icon
     width: 30px
 .section
-  padding: 40px 0 30px
+  padding: 50px 0 50px
   &-title
     color: $primary-dark
     font-size: 42px
