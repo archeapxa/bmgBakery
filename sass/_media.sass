@@ -119,17 +119,20 @@
     &__image
       height: calc(100vh - 140px)
   .about-us
+    background: linear-gradient(to left, rgba($primary-light, 0.7), rgba($primary-light, 1)), url("../img/about-us/cake.png") center right / 350px auto no-repeat;
+    background-position: top 100px right
     &__container
       background: none
     &__row
       display: flex
-      align-items: center
+      align-items: flex-end
       justify-content: space-between
     &__info
       &-list
         max-height: none
         justify-content: space-between
         max-height: 340px
+        margin-bottom: 50px
         // margin-top: 70px
       &-item
         margin-bottom: 30px
@@ -183,6 +186,7 @@
     &__info
       &-list
         max-height: 200px
+        margin-bottom: 0
       &-item
         // width: 48%
         font-size: 14px

@@ -1317,10 +1317,6 @@ button.swiper-pagination-bullet {
   font-size: 16px;
 }
 
-.about-us__text:last-of-type {
-  margin-bottom: 30px;
-}
-
 .about-us__info-list {
   list-style: none;
   padding: 0;
@@ -1346,6 +1342,7 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .about-us__info-icon {
@@ -1779,6 +1776,11 @@ button.swiper-pagination-bullet {
   .hero__image {
     height: calc(100vh - 140px);
   }
+  .about-us {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(242, 253, 255, 0.7)), to(#f2fdff)), url("../img/about-us/cake.png") center right/350px auto no-repeat;
+    background: linear-gradient(to left, rgba(242, 253, 255, 0.7), #f2fdff), url("../img/about-us/cake.png") center right/350px auto no-repeat;
+    background-position: top 100px right;
+  }
   .about-us__container {
     background: none;
   }
@@ -1786,9 +1788,9 @@ button.swiper-pagination-bullet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1799,6 +1801,7 @@ button.swiper-pagination-bullet {
         -ms-flex-pack: justify;
             justify-content: space-between;
     max-height: 340px;
+    margin-bottom: 50px;
   }
   .about-us__info-item {
     margin-bottom: 30px;
@@ -1866,6 +1869,7 @@ button.swiper-pagination-bullet {
   }
   .about-us__info-list {
     max-height: 200px;
+    margin-bottom: 0;
   }
   .about-us__info-item {
     font-size: 14px;
