@@ -447,7 +447,7 @@ img {
 }
 
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #00a1c2;
 }
 
 .swiper-container {
@@ -614,7 +614,7 @@ img {
 }
 
 :root {
-  --swiper-navigation-size: 44px;
+  --swiper-navigation-size: 22px;
 }
 
 .swiper-button-next,
@@ -1469,6 +1469,53 @@ button.swiper-pagination-bullet {
   display: inline-block;
 }
 
+.reviews__section-title {
+  margin-bottom: 30px;
+}
+
+.reviews__slider-wrapper {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 50px;
+}
+
+.reviews__slider-slide {
+  background-color: #f2fdff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #00A1C2;
+  height: 100%;
+}
+
+.reviews__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.reviews__avatar {
+  width: 70px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 30px;
+}
+
+.reviews__name {
+  font-size: 18px;
+  color: #006276;
+}
+
+.reviews__text {
+  line-height: 160%;
+  margin: 0;
+}
+
 @media screen and (max-width: 1400px) {
   .hero__title {
     font-size: 30px;
@@ -1643,6 +1690,9 @@ button.swiper-pagination-bullet {
   .delivery__list-item-description {
     max-width: 100%;
   }
+  .reviews__text {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1720,5 +1770,8 @@ button.swiper-pagination-bullet {
   }
   .socials-icon {
     width: 20px;
+  }
+  .reviews__text {
+    font-size: 14px;
   }
 }

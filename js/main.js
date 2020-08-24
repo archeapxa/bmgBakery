@@ -25,20 +25,28 @@ var heroSlider = new Swiper('.hero-slider', {
 
 var reviewsSlider = new Swiper('.reviews__slider', {
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 25,
+  centeredSlides: true,
 
   // Navigation arrows
-  navigation: {
-    nextEl: '.reviews__slider-button-next',
-    prevEl: '.reviews__slider-button-prev',
+  // navigation: {
+  //   nextEl: '.reviews__slider-button-next',
+  //   prevEl: '.reviews__slider-button-prev',
+  // },
+
+  pagination: {
+    el: '.reviews__slider-pagination',
+    type: 'bullets',
+    clickable: true,
   },
 
   breakpoints: {
     // when window width is >= 320px
-    640: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 25,
+      centeredSlides: false,
     }
   }
 
