@@ -54,9 +54,7 @@ var reviewsSlider = new Swiper('.reviews__slider', {
 
 var cakesSliderMuss = new Swiper('.cakes__slider--muss', {
   loop: true,
-  slidesPerView: 3,
-  observer: true,
-  observeParents: true,
+  slidesPerView: 1,
 
   // If we need pagination
   pagination: {
@@ -72,13 +70,23 @@ var cakesSliderMuss = new Swiper('.cakes__slider--muss', {
     prevEl: '.cakes__slider-button-prev',
   },
 
+  breakpoints: {
+    // when window width is >= 320px
+    1200: {
+      slidesPerView: 3,
+    },
+    767: {
+      slidesPerView: 2,
+    }
+  },
+
 })
 
 // document.addEventListener
 
 var cakesSliderMini = new Swiper('.cakes__slider--mini', {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   observer: true,
   observeParents: true,
 
@@ -96,12 +104,22 @@ var cakesSliderMini = new Swiper('.cakes__slider--mini', {
     prevEl: '.cakes__slider-button-prev',
   },
 
+  breakpoints: {
+    // when window width is >= 320px
+    1200: {
+      slidesPerView: 3,
+    },
+    767: {
+      slidesPerView: 2,
+    }
+  },
+
 })
 
 
 var cakesSliderBiscuit = new Swiper('.cakes__slider--biscuit', {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   observer: true,
   observeParents: true,
 
@@ -117,6 +135,16 @@ var cakesSliderBiscuit = new Swiper('.cakes__slider--biscuit', {
   navigation: {
     nextEl: '.cakes__slider-button-next',
     prevEl: '.cakes__slider-button-prev',
+  },
+  
+  breakpoints: {
+    // when window width is >= 320px
+    1200: {
+      slidesPerView: 3,
+    },
+    767: {
+      slidesPerView: 2,
+    }
   },
 
 })

@@ -1200,10 +1200,10 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 30px;
   padding: 20px;
   background: #f2fdff;
   border-radius: 20px;
+  height: 460px;
 }
 
 .card__image {
@@ -1768,6 +1768,10 @@ button.swiper-pagination-bullet {
   right: 5px;
 }
 
+.cakes__card {
+  margin: 0 30px;
+}
+
 @media screen and (max-width: 1400px) {
   .hero__title {
     font-size: 30px;
@@ -1991,6 +1995,9 @@ button.swiper-pagination-bullet {
   .container {
     width: 90%;
   }
+  .tab__title {
+    font-size: 14px;
+  }
   .hero__title {
     font-size: 32px;
     max-width: 340px;
@@ -2022,11 +2029,24 @@ button.swiper-pagination-bullet {
   .socials-icon {
     width: 20px;
   }
+  .cakes__description {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 460px) {
   .section-title {
     font-size: 28px;
+  }
+  .card__image {
+    width: 90%;
+  }
+  .tab__title {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+  .tab__title:first-of-type {
+    padding-left: 0;
   }
   .hero__title {
     font-size: 28px;
@@ -2066,5 +2086,8 @@ button.swiper-pagination-bullet {
   }
   .reviews__text {
     font-size: 14px;
+  }
+  .cakes__card {
+    margin: 0;
   }
 }

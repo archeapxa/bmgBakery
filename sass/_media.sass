@@ -175,6 +175,9 @@
 @media screen and ( max-width: 640px )
   .container
     width: 90%
+  .tab
+    &__title
+      font-size: 14px
   .hero
     &__title
       font-size: 32px
@@ -200,9 +203,26 @@
   .socials
     &-icon
       width: 20px
+  .cakes
+    &__description
+      font-size: 14px
 @media screen and ( max-width: 460px )
   .section-title
     font-size: 28px
+  .card
+    &__image
+      width: 90%
+      // max-width: 90%
+  .tab
+    &__title
+      font-size: 13px
+      padding: 0 10px
+      // transition: none
+      &:first-of-type
+        padding-left: 0
+      // &:last-of-type
+      //   padding-right: 0
+
   .hero
     &__title
       font-size: 28px
@@ -231,5 +251,8 @@
   .reviews
     &__text
       font-size: 14px
-  
+  .cakes
+    &__card
+      margin: 0
+
   
