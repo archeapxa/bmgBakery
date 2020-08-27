@@ -3,9 +3,9 @@
 .tab 
   &-container
     position: relative
-    height: 400px
+    height: 500px
   &__input
-    display: none; 
+    display: none
   &__title
     padding: 10px 20px
     color: $primary
@@ -18,7 +18,10 @@
     left: 0
     width: 100%
     height: 100%
-    display: none
+    // display: none
+    visibility: hidden
+    opacity: 0
+    transition: all 0.5s
   &__input:checked + &__title 
     position: relative
     background: #fff
@@ -26,4 +29,7 @@
     color: $primary-dark
     font-weight: 600
   &__input:checked ~ &__content 
-    display: block
+    // display: block
+    visibility: visible
+    opacity: 1
+    transition: all 0.5s

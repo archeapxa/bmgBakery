@@ -52,19 +52,82 @@ var reviewsSlider = new Swiper('.reviews__slider', {
 
 })
 
-var CakesSliderBiscuit = new Swiper('.cakes__slider--biscuit', {
+var cakesSliderMuss = new Swiper('.cakes__slider--muss', {
   loop: true,
   slidesPerView: 3,
+  observer: true,
+  observeParents: true,
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    type: 'bullets',
+    dynamicBullets: 'true',
+    dynamicMainBullets: '3',
+    el: '.cakes__slider-pagination',
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.cakes__slider-button-next',
+    prevEl: '.cakes__slider-button-prev',
   },
 
 })
+
+// document.addEventListener
+
+var cakesSliderMini = new Swiper('.cakes__slider--mini', {
+  loop: true,
+  slidesPerView: 3,
+  observer: true,
+  observeParents: true,
+
+  // If we need pagination
+  pagination: {
+    type: 'bullets',
+    dynamicBullets: 'true',
+    dynamicMainBullets: '3',
+    el: '.cakes__slider-pagination--mini',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.cakes__slider-button-next',
+    prevEl: '.cakes__slider-button-prev',
+  },
+
+})
+
+
+var cakesSliderBiscuit = new Swiper('.cakes__slider--biscuit', {
+  loop: true,
+  slidesPerView: 3,
+  observer: true,
+  observeParents: true,
+
+  // If we need pagination
+  pagination: {
+    type: 'bullets',
+    dynamicBullets: 'true',
+    dynamicMainBullets: '3',
+    el: '.cakes__slider-pagination--biscuit',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.cakes__slider-button-next',
+    prevEl: '.cakes__slider-button-prev',
+  },
+
+})
+
+const cakesRadioGroup = document.querySelectorAll('input[name=tabGroupCakes]');
+// console.log(cakesRadioGroup);
+cakesRadioGroup.forEach(radio => {
+  radio.addEventListener('change', () => {
+    // console.log('change')
+    cakesSliderBiscuit.update();
+    cakesSliderMini.update();
+    cakesSliderBiscuit.update();
+  })
+});
