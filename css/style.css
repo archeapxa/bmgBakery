@@ -1140,6 +1140,49 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
+.tab, .tab__title {
+  display: inline-block;
+}
+
+.tab-container {
+  position: relative;
+  height: 400px;
+}
+
+.tab__input {
+  display: none;
+}
+
+.tab__title {
+  padding: 10px 20px;
+  color: #00A1C2;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+
+.tab__content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.tab__input:checked + .tab__title {
+  position: relative;
+  background: #fff;
+  z-index: 1;
+  color: #006276;
+  font-weight: 600;
+}
+
+.tab__input:checked ~ .tab__content {
+  display: block;
+}
+
 .header {
   padding: 20px 0;
 }
@@ -1552,6 +1595,19 @@ button.swiper-pagination-bullet {
 
 .contact-us__socials-icon {
   margin-top: 10px;
+}
+
+.cakes__section-title {
+  margin-bottom: 30px;
+}
+
+.cakes__tab-container {
+  width: 100%;
+  text-align: center;
+}
+
+.cakes__slider {
+  height: 100%;
 }
 
 .form {

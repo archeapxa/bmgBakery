@@ -1,0 +1,29 @@
+.tab, .tab__title 
+  display: inline-block
+.tab 
+  &-container
+    position: relative
+    height: 400px
+  &__input
+    display: none; 
+  &__title
+    padding: 10px 20px
+    color: $primary
+    font-size: 18px
+    cursor: pointer
+    transition: all 0.5s
+    margin-bottom: 20px
+  &__content 
+    position: absolute
+    left: 0
+    width: 100%
+    height: 100%
+    display: none
+  &__input:checked + &__title 
+    position: relative
+    background: #fff
+    z-index: 1
+    color: $primary-dark
+    font-weight: 600
+  &__input:checked ~ &__content 
+    display: block
