@@ -1,3 +1,6 @@
+
+const cakesRadioGroup = document.querySelectorAll('input[name=tabGroupCakes]');
+
 var heroSlider = new Swiper('.hero-slider', {
   loop: true,
   slidesPerView: 1,
@@ -149,7 +152,7 @@ var cakesSliderBiscuit = new Swiper('.cakes__slider--biscuit', {
 
 })
 
-const cakesRadioGroup = document.querySelectorAll('input[name=tabGroupCakes]');
+
 // console.log(cakesRadioGroup);
 cakesRadioGroup.forEach(radio => {
   radio.addEventListener('change', () => {
@@ -159,3 +162,8 @@ cakesRadioGroup.forEach(radio => {
     cakesSliderBiscuit.update();
   })
 });
+
+
+const lightbox = GLightbox({ 
+  touchNavigation: true,
+ });
