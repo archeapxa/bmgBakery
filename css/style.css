@@ -1616,6 +1616,11 @@ button.swiper-pagination-bullet {
   padding: 0;
 }
 
+.macaroon__list-wrap {
+  -ms-flex-preferred-size: 38%;
+      flex-basis: 38%;
+}
+
 .macaroon__photo {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1840,6 +1845,29 @@ button.swiper-pagination-bullet {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 992px) {
+  .header-nav__link:hover {
+    border-bottom: 2px solid #00A1C2;
+  }
+  .contacts-group__item:hover {
+    color: #00A1C2;
+  }
+  .button {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .button:hover {
+    color: #006276;
+    border-color: #006276;
+  }
+  .macaroon__photo:hover {
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .hero__title {
     font-size: 30px;
@@ -1913,6 +1941,9 @@ button.swiper-pagination-bullet {
   .about-us__socials {
     left: 200px;
   }
+  .macaroon__list-item {
+    font-size: 14px;
+  }
   .socials-icon {
     width: 25px;
   }
@@ -1933,29 +1964,6 @@ button.swiper-pagination-bullet {
   }
   .contact-us__container {
     background-position: center right 30px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .header-nav__link:hover {
-    border-bottom: 2px solid #00A1C2;
-  }
-  .contacts-group__item:hover {
-    color: #00A1C2;
-  }
-  .button {
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .button:hover {
-    color: #006276;
-    border-color: #006276;
-  }
-  .macaroon__photo:hover {
-    -webkit-transition: all 1.5s;
-    transition: all 1.5s;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
 }
 
@@ -2027,6 +2035,21 @@ button.swiper-pagination-bullet {
   .about-us__text:nth-of-type(n) {
     max-width: 300px;
   }
+  .macaroon__description {
+    font-size: 14px;
+  }
+  .macaroon__photo-container {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .macaroon__photo-wrap {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+  .macaroon__photo-wrap:nth-child(n+4) {
+    display: none;
+  }
   .delivery__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2048,8 +2071,8 @@ button.swiper-pagination-bullet {
     font-size: 14px;
   }
   .contact-us {
-    background: -webkit-gradient(linear, right top, left top, from(rgba(242, 253, 255, 0.5)), to(#f2fdff)), url("../img/contact-us/bg-cake.png") center right 50px/auto 100% no-repeat;
-    background: linear-gradient(to left, rgba(242, 253, 255, 0.5), #f2fdff), url("../img/contact-us/bg-cake.png") center right 50px/auto 100% no-repeat;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(242, 253, 255, 0.5)), to(#f2fdff)), url("../img/contact-us/bg-cake.png") center right 50px/auto 90% no-repeat;
+    background: linear-gradient(to left, rgba(242, 253, 255, 0.5), #f2fdff), url("../img/contact-us/bg-cake.png") center right 50px/auto 90% no-repeat;
   }
   .contact-us__container {
     background: none;
@@ -2105,6 +2128,45 @@ button.swiper-pagination-bullet {
   }
   .cakes__description {
     font-size: 14px;
+  }
+  .macaroon__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .macaroon__photo-container {
+    margin-bottom: 30px;
+  }
+  .macaroon__photo-wrap {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .macaroon__photo-wrap:nth-child(n+4) {
+    display: block;
+  }
+  .macaroon__photo-wrap:nth-child(n+5) {
+    display: none;
+  }
+  .macaroon__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-height: 350px;
+  }
+  .macaroon__list-wrap {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    width: 100%;
+  }
+  .macaroon__list-item {
+    max-width: 170px;
   }
 }
 
@@ -2163,5 +2225,12 @@ button.swiper-pagination-bullet {
   }
   .cakes__card {
     margin: 0;
+  }
+  .macaroon__list {
+    max-height: 320px;
+  }
+  .macaroon__list-item {
+    font-size: 12px;
+    max-width: 150px;
   }
 }
