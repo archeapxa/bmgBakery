@@ -53,3 +53,14 @@ img
     font-weight: 800
     // letter-spacing: 1px
     margin: 0
+.list
+  &-item
+    line-height: 140%
+    &::before
+      content: "\2022"
+      color: $primary-dark
+      font-weight: bold;
+      display: inline-block
+      width: 18px;
+      font-size: 24px
+

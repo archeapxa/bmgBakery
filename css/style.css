@@ -434,6 +434,19 @@ img {
   margin: 0;
 }
 
+.list-item {
+  line-height: 140%;
+}
+
+.list-item::before {
+  content: "\2022";
+  color: #006276;
+  font-weight: bold;
+  display: inline-block;
+  width: 18px;
+  font-size: 24px;
+}
+
 /**
  * Swiper 6.1.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1543,6 +1556,92 @@ button.swiper-pagination-bullet {
   top: 15px;
 }
 
+.cakes__section-title {
+  margin-bottom: 20px;
+}
+
+.cakes__description {
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.cakes__tab-container {
+  width: 100%;
+  text-align: center;
+}
+
+.cakes__slider {
+  height: 100%;
+}
+
+.cakes__slider-button {
+  background-color: transparent;
+  border: none;
+}
+
+.cakes__slider-button-prev {
+  left: 5px;
+}
+
+.cakes__slider-button-next {
+  right: 5px;
+}
+
+.cakes__card {
+  margin: 0 30px;
+}
+
+.macaroon {
+  background-color: #f2fdff;
+}
+
+.macaroon__section-title {
+  margin-bottom: 30px;
+}
+
+.macaroon__description {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.macaroon__row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.macaroon__list {
+  list-style: none;
+  padding: 0;
+}
+
+.macaroon__photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.macaroon__photo-container {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.macaroon__photo-wrap {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+  max-height: 250px;
+}
+
 .delivery {
   background-color: #f2fdff;
 }
@@ -1741,42 +1840,6 @@ button.swiper-pagination-bullet {
   margin-top: 10px;
 }
 
-.cakes__section-title {
-  margin-bottom: 20px;
-}
-
-.cakes__description {
-  max-width: 600px;
-  text-align: left;
-  margin-bottom: 30px;
-}
-
-.cakes__tab-container {
-  width: 100%;
-  text-align: center;
-}
-
-.cakes__slider {
-  height: 100%;
-}
-
-.cakes__slider-button {
-  background-color: transparent;
-  border: none;
-}
-
-.cakes__slider-button-prev {
-  left: 5px;
-}
-
-.cakes__slider-button-next {
-  right: 5px;
-}
-
-.cakes__card {
-  margin: 0 30px;
-}
-
 @media screen and (max-width: 1400px) {
   .hero__title {
     font-size: 30px;
@@ -1887,6 +1950,12 @@ button.swiper-pagination-bullet {
   .button:hover {
     color: #006276;
     border-color: #006276;
+  }
+  .macaroon__photo:hover {
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
