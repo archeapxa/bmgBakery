@@ -53,7 +53,9 @@
             <a href="mailto:" class="contacts-group__item">mail@mail.ru</a>
           </div>
           <!-- /.header__contacts-group -->
-          <button class="header__order-button button">Заказать</button>
+          <button class="header__order-button button" data-toggle="modal">
+            Заказать
+          </button>
         </div>
         <!-- /.row -->
       </div>
@@ -1195,6 +1197,7 @@
                   class="input form__input-item"
                   placeholder="Ваше имя"
                   name="name"
+                  minlength="3"
                   required
                 />
               </div>
@@ -1258,6 +1261,70 @@
       </section>
       <!-- /.section contact-us -->
     </main>
+    <div class="modal">
+      <div class="modal__window">
+        <form
+          action="send.php"
+          method="POST"
+          id="formModal"
+          class="form modal__form"
+        >
+          <h4 class="form__title modal__title">Заполните форму для заказа</h4>
+          <span class="form__text">И мы свяжемся с вами</span>
+          <div class="form__input-block">
+            <div class="form__input-group input-group">
+              <label for="modal__name" class="form__input-label"
+                >Введите Ваше имя</label
+              >
+              <input
+                id="modal__name"
+                type="text"
+                class="input form__input-item"
+                placeholder="Ваше имя"
+                name="name"
+                minlength="3"
+                required
+              />
+            </div>
+            <!-- /.input-group -->
+            <div class="form__input-group input-group">
+              <label for="modal__phone" class="form__input-label"
+                >Введите Ваш номер телефона</label
+              >
+              <input
+                id="modal__phone"
+                type="tel"
+                class="input form__input-item"
+                placeholder="Ваш телефон"
+                name="phone"
+                required
+              />
+            </div>
+            <!-- /.input-group -->
+          </div>
+          <!-- /.form__input-block -->
+          <button class="button form__button" type="submit">Заказать</button>
+          <div class="form__policy-group">
+            <input
+              class="form__policy-checkbox"
+              id="modal__policy"
+              type="checkbox"
+              required
+              checked
+            />
+            <label class="form__policy-label" for="modal__policy"
+              >Я соглашаюсь с обработкой данных</label
+            >
+          </div>
+          <!-- /.form__policy-group -->
+        </form>
+
+        <button class="modal__close-btn"></button>
+      </div>
+      <!-- /.modal__window modal__window--active -->
+    </div>
+    <!-- /.modal modal--active -->
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/glightbox.min.js"></script>
     <script src="js/main.js"></script>

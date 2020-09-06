@@ -1,6 +1,11 @@
 
 const cakesRadioGroup = document.querySelectorAll('input[name=tabGroupCakes]');
 
+const modal = document.querySelector('.modal'),
+  modalWindow = document.querySelector('.modal__window'),
+  modalBtn = document.querySelectorAll('[data-toggle=modal]'),
+  modalCloseBtn = document.querySelector('.modal__close-btn');
+
 var heroSlider = new Swiper('.hero-slider', {
   loop: true,
   slidesPerView: 1,
@@ -153,17 +158,53 @@ var cakesSliderBiscuit = new Swiper('.cakes__slider--biscuit', {
 })
 
 
-// console.log(cakesRadioGroup);
+// updating slider on tab change
 cakesRadioGroup.forEach(radio => {
   radio.addEventListener('change', () => {
-    // console.log('change')
     cakesSliderBiscuit.update();
     cakesSliderMini.update();
     cakesSliderBiscuit.update();
   })
 });
 
-
+// zoom images in sliders plugin
 const lightbox = GLightbox({ 
   touchNavigation: true,
- });
+});
+
+// phone masking
+const phone = document.getElementById('contact-us__phone');
+const modalPhone = document.getElementById('modal__phone');
+var maskPhone = {
+  mask: '+38 (000) 000-00-00',
+};
+var mask = IMask(phone, maskPhone);
+var maskModal = IMask(modalPhone, maskPhone);
+
+
+
+const modalToggle = () => {
+  modal.classList.toggle('modal--active');
+  modalWindow.classList.toggle('modal__window--active');
+}
+
+modalBtn.forEach(element => {
+  element.addEventListener('click', modalToggle);
+});
+
+modalCloseBtn.addEventListener('click', modalToggle);
+
+// modalBtn.on('click', function () {
+//   modal.addClass('modal--visible');
+// });
+// closeBtn.on('click', function () {
+//   modal.removeClass('modal--visible');
+//   modalSuccess.removeClass('modal--visible');
+  // modal.val('');
+  // $('#user-name').val('').removeClass('invalid');
+  // $('#user-phone').val('').removeClass('invalid');
+  // $('#user-email').val('').removeClass('invalid');
+  // // $('div.invalid').css('display', 'none');
+  // $('[data-modal]').find("div.invalid").css('display', 'none');
+// });
+
