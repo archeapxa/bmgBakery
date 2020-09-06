@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <title>BeMyGuest Bakery</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap"
@@ -1176,7 +1176,12 @@
               alt="Be My Guest Logo"
               class="contact-us__logo-img"
           /></a>
-          <form action="#" class="form contact-us__form">
+          <form
+            action="send.php"
+            method="POST"
+            id="formMain"
+            class="form contact-us__form"
+          >
             <h4 class="form__title">Заполните форму для заказа</h4>
             <span class="form__text">И мы свяжемся с вами</span>
             <div class="form__input-block">
@@ -1189,6 +1194,7 @@
                   type="text"
                   class="input form__input-item"
                   placeholder="Ваше имя"
+                  name="name"
                   required
                 />
               </div>
@@ -1202,6 +1208,7 @@
                   type="tel"
                   class="input form__input-item"
                   placeholder="Ваш телефон"
+                  name="phone"
                   required
                 />
               </div>
