@@ -273,9 +273,12 @@
       // &:last-of-type
       //   padding-right: 0
   .hero
+    padding-bottom: 0
     &__title
       font-size: 28px
       max-width: 300px
+    &__image
+      height: calc(100vh - 100px)
   .about-us
     &__row
       align-items: center
@@ -317,4 +320,11 @@
     &__input
       &-label
         font-size: 14px
-  
+@media (max-height: 530px)
+  .hero
+    padding: 0
+    &__title 
+      font-size: 28px
+      max-width: 300px
+    &__image
+      height: calc(100vh - 100px)
