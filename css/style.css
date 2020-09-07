@@ -2490,6 +2490,9 @@ button.swiper-pagination-bullet {
   .form__input-label {
     font-size: 14px;
   }
+  .contact-us__socials {
+    top: 50px;
+  }
   .footer__logo {
     width: 150px;
     margin-right: 20px;
