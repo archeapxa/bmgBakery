@@ -196,6 +196,21 @@ modalBtn.forEach(element => {
 });
 
 modalCloseBtn.addEventListener('click', modalToggle);
+modal.addEventListener('click', e => {
+  target = e.target;
+  if (!modalWindow.contains(target)) {
+    modalToggle();
+  }
+});
+
+document.addEventListener('keyup', e => {
+  if (e.keyCode === 27) {
+    if (modal.classList.contains('modal--active')) {
+      modalToggle()
+    }
+  }
+});
+  
 
 if (window.FormData) {
 
@@ -263,9 +278,7 @@ if (window.FormData) {
       }
     }
   });
-
 }
-
 
 
 
