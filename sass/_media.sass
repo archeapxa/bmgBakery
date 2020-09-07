@@ -20,7 +20,12 @@
       &:hover
         transition: all 1.5s
         transform: scale(1.2)
-  
+  .footer
+    &__nav
+      &-link
+        &:hover
+          color: $primary
+          border-bottom: 2px solid $primary
 @media screen and ( max-width: 1400px )
   .hero
     &__title
@@ -109,7 +114,10 @@
   .contact-us
     &__container
       background-position: center right 30px
-
+  .footer
+    &__logo
+      width: 150px
+      margin-right: 30px
 @media screen and ( max-width: 767px )
   .section-title
     font-size: 36px
@@ -198,6 +206,23 @@
       &-group
         &:first-child
           margin-bottom: 20px
+  .footer
+    &__logo
+      margin-right: 0
+      padding-right: 20px
+      width: 170px
+    &__nav
+      &-list
+        max-height: 150px
+        width: auto
+        &-item
+          margin-top: 2px
+          margin-bottom: 2px
+      &-link
+        font-size: 12px
+    &__policy
+      &-text
+        font-size: 10px
 @media screen and ( max-width: 640px )
   .container
     width: 90%
@@ -256,6 +281,24 @@
       &-item
         // width: 250px
         max-width: 170px
+  .footer
+    &__logo
+      padding-right: 0
+      margin-right: 50px
+    &__row-main
+      justify-content: flex-start
+    &__contacts
+      display: none
+    &__policy
+      flex-wrap: wrap
+      justify-content: flex-start
+      &-text
+        &:first-child
+          padding-right: 10px
+          margin-right: auto
+    &__author
+      &-text
+        margin-left: 0
 @media screen and ( max-width: 460px )
   .section-title
     font-size: 28px
@@ -320,6 +363,14 @@
     &__input
       &-label
         font-size: 14px
+  .footer
+    &__logo
+      width: 150px
+      margin-right: 20px
+    &__nav
+      width: auto
+      &-list
+        max-height: 100vh
 @media (max-height: 530px)
   .hero
     padding: 0

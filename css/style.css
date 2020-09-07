@@ -1860,7 +1860,7 @@ button.swiper-pagination-bullet {
 
 .contact-us__socials {
   right: 0;
-  bottom: 0;
+  top: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1869,6 +1869,114 @@ button.swiper-pagination-bullet {
 
 .contact-us__socials-icon {
   margin-top: 10px;
+}
+
+.footer__row-main {
+  padding: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo {
+  width: 200px;
+  margin-right: 100px;
+}
+
+.footer__nav {
+  width: 50%;
+}
+
+.footer__nav-list {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 100px;
+  margin: 0;
+}
+
+.footer__nav-list-item {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.footer__nav-link {
+  color: #006276;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border 1s;
+  transition: border 1s;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.footer__nav-socials-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+.footer__nav-social-icon {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: auto;
+}
+
+.footer__contacts-group {
+  margin-top: 20px;
+}
+
+.footer__policy {
+  border-top: 1px solid #006276;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__policy-text {
+  font-size: 13px;
+}
+
+.footer__author-text {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.footer__author-link {
+  color: inherit;
 }
 
 .modal {
@@ -1948,6 +2056,10 @@ button.swiper-pagination-bullet {
     transition: all 1.5s;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
+  }
+  .footer__nav-link:hover {
+    color: #00A1C2;
+    border-bottom: 2px solid #00A1C2;
   }
 }
 
@@ -2047,6 +2159,10 @@ button.swiper-pagination-bullet {
   }
   .contact-us__container {
     background-position: center right 30px;
+  }
+  .footer__logo {
+    width: 150px;
+    margin-right: 30px;
   }
 }
 
@@ -2169,6 +2285,25 @@ button.swiper-pagination-bullet {
   .form__input-group:first-child {
     margin-bottom: 20px;
   }
+  .footer__logo {
+    margin-right: 0;
+    padding-right: 20px;
+    width: 170px;
+  }
+  .footer__nav-list {
+    max-height: 150px;
+    width: auto;
+  }
+  .footer__nav-list-item {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .footer__nav-link {
+    font-size: 12px;
+  }
+  .footer__policy-text {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -2251,6 +2386,32 @@ button.swiper-pagination-bullet {
   .macaroon__list-item {
     max-width: 170px;
   }
+  .footer__logo {
+    padding-right: 0;
+    margin-right: 50px;
+  }
+  .footer__row-main {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__contacts {
+    display: none;
+  }
+  .footer__policy {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__policy-text:first-child {
+    padding-right: 10px;
+    margin-right: auto;
+  }
+  .footer__author-text {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -2328,6 +2489,16 @@ button.swiper-pagination-bullet {
   }
   .form__input-label {
     font-size: 14px;
+  }
+  .footer__logo {
+    width: 150px;
+    margin-right: 20px;
+  }
+  .footer__nav {
+    width: auto;
+  }
+  .footer__nav-list {
+    max-height: 100vh;
   }
 }
 
