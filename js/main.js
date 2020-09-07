@@ -7,7 +7,8 @@ const modal = document.querySelector('.modal'),
   modalCloseBtn = document.querySelector('.modal__close-btn'),
   modalFormSubmit = document.getElementById('modalFormSubmit'),
   modalForm = document.getElementById('formModal'),
-  formMain = document.getElementById('formMain');
+  formMain = document.getElementById('formMain'),
+  toTopBtn = document.getElementById('toTopBtn');
 
 var heroSlider = new Swiper('.hero-slider', {
   loop: true,
@@ -281,6 +282,24 @@ if (window.FormData) {
 }
 
 
+// TOP TOP BUTTON
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    toTopBtn.style.visibility = "visible";
+    toTopBtn.style.opacity = "1";
+
+  } else {
+    toTopBtn.style.visibility = "hidden";
+    toTopBtn.style.opacity = "0";
+  }
+}
+
+window.onscroll = function () { scrollFunction() };
+
+toTopBtn.addEventListener('click', () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
 
 
 // modalBtn.on('click', function () {

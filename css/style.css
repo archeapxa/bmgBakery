@@ -449,6 +449,28 @@ img {
   font-size: 24px;
 }
 
+.top-btn {
+  visibility: hidden;
+  opacity: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  z-index: 99;
+  cursor: pointer;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  outline: none;
+  border-radius: 50%;
+}
+
+.top-btn__icon {
+  height: 50px;
+  width: 50px;
+}
+
 /**
  * Swiper 6.1.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
