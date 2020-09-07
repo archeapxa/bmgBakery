@@ -4,7 +4,10 @@ const cakesRadioGroup = document.querySelectorAll('input[name=tabGroupCakes]');
 const modal = document.querySelector('.modal'),
   modalWindow = document.querySelector('.modal__window'),
   modalBtn = document.querySelectorAll('[data-toggle=modal]'),
-  modalCloseBtn = document.querySelector('.modal__close-btn');
+  modalCloseBtn = document.querySelector('.modal__close-btn'),
+  modalFormSubmit = document.getElementById('modalFormSubmit'),
+  modalForm = document.getElementById('formModal'),
+  formMain = document.getElementById('formMain');
 
 var heroSlider = new Swiper('.hero-slider', {
   loop: true,
@@ -194,6 +197,77 @@ modalBtn.forEach(element => {
 
 modalCloseBtn.addEventListener('click', modalToggle);
 
+if (window.FormData) {
+
+// ДЛЯ ФОРМЫ МОДАЛКИ
+  // Добавляем обработчик на событие `submit`
+  modalForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    // Настройка AJAX запроса
+    var request = new XMLHttpRequest();
+    request.open('POST', 'send.php', true);
+    // Это простой способ подготавливить данные для отправки (все браузеры и IE > 9)
+    var formData = new FormData(modalForm);
+    // Отправляем данные
+    request.send(formData);
+
+    // Функция для наблюдения изменения состояния request.readyState обновления statusMessage соответственно
+    request.onreadystatechange = function () {
+      // <4 =  ожидаем ответ от сервера
+      if (request.readyState < 4) {
+        console.log('waiting');
+      // 4 = Ответ от сервера полностью загружен
+      }
+      else if (request.readyState === 4) {
+        // 200 - 299 = успешная отправка данных!
+        if (request.status == 200 && request.status < 300) {
+          swal("Заявка принята!", "Мы вам позвоним!", "success");
+          modalToggle(); 
+        }
+        else {
+          swal("Oops", "Произошла ошибка.", "error");
+          modalToggle();
+        }
+      }
+    }
+  });
+
+  // ДЛЯ ФОРМЫ КОНТАКТОВ
+  formMain.addEventListener('submit', function (event) {
+    event.preventDefault();
+    // Настройка AJAX запроса
+    var request = new XMLHttpRequest();
+    request.open('POST', 'send.php', true);
+    // Это простой способ подготавливить данные для отправки (все браузеры и IE > 9)
+    var formData = new FormData(formMain);
+    // Отправляем данные
+    request.send(formData);
+
+    // Функция для наблюдения изменения состояния request.readyState обновления statusMessage соответственно
+    request.onreadystatechange = function () {
+      // <4 =  ожидаем ответ от сервера
+      if (request.readyState < 4) {
+        console.log('waiting');
+        // 4 = Ответ от сервера полностью загружен
+      }
+      else if (request.readyState === 4) {
+        // 200 - 299 = успешная отправка данных!
+        if (request.status == 200 && request.status < 300) {
+          swal("Заявка принята!", "Мы вам позвоним!", "success");
+        }
+        else {
+          swal("Oops", "Произошла ошибка.", "error");
+        }
+      }
+    }
+  });
+
+}
+
+
+
+
+
 // modalBtn.on('click', function () {
 //   modal.addClass('modal--visible');
 // });
@@ -208,3 +282,68 @@ modalCloseBtn.addEventListener('click', modalToggle);
   // $('[data-modal]').find("div.invalid").css('display', 'none');
 // });
 
+// function XmlHttp() {
+//   var xmlhttp;
+//   try {
+//     xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+//   } catch (e) {
+//     try {
+//       xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+//     } catch (E) {
+//       xmlhttp = false;
+//     }
+//   }
+//   if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
+//     xmlhttp = new XMLHttpRequest();
+//   }
+//   return xmlhttp;
+// };
+
+
+
+
+
+// function ajax(param) {
+//   if (window.XMLHttpRequest) req = new XmlHttp();
+//   method = (!param.method ? "POST" : param.method.toUpperCase());
+
+//   if (method == "GET") {
+//     send = null;
+//     param.url = param.url + "&ajax=true";
+//   }
+//   else {
+//     send = "";
+//     for (var i in param.data) send += i + "=" + param.data[i] + "&";
+//     send = send + "ajax=true";
+//   }
+
+//   req.open(method, param.url, true);
+//   // if (param.statbox) document.getElementById(param.statbox).innerHTML = '<img src="images/wait.gif">';
+//   req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+//   req.send(send);
+//   req.onreadystatechange = function () {
+//     if (req.readyState == 4 && req.status == 200) //если ответ положительный
+//     {
+//       console.log('success');
+//       // if (param.success) param.success(req.responseText);
+//     }
+//   }
+// };
+
+
+// modalFormSubmit.addEventListener('click', ajax({
+//   url: "send.php",
+//   statbox: "status",
+//   method: "POST",
+//   data: { name: "value",
+//   phone: "value" },
+//   success: function (data) { console.log(data) }
+// })
+// );
+// ajax({
+//   url: "get_ajax.php",
+//   statbox: "status",
+//   method: "POST",
+//   data: { name: "value" },
+//   success: function (data) { document.getElementById("status").innerHTML = data; }
+// });

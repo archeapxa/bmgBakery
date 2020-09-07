@@ -1179,7 +1179,6 @@
               class="contact-us__logo-img"
           /></a>
           <form
-            action="send.php"
             method="POST"
             id="formMain"
             class="form contact-us__form"
@@ -1263,12 +1262,7 @@
     </main>
     <div class="modal">
       <div class="modal__window">
-        <form
-          action="send.php"
-          method="POST"
-          id="formModal"
-          class="form modal__form"
-        >
+        <form id="formModal" method="POST" class="form modal__form">
           <h4 class="form__title modal__title">Заполните форму для заказа</h4>
           <span class="form__text">И мы свяжемся с вами</span>
           <div class="form__input-block">
@@ -1303,7 +1297,13 @@
             <!-- /.input-group -->
           </div>
           <!-- /.form__input-block -->
-          <button class="button form__button" type="submit">Заказать</button>
+          <button
+            id="modalFormSubmit"
+            class="button form__button"
+            type="submit"
+          >
+            Заказать
+          </button>
           <div class="form__policy-group">
             <input
               class="form__policy-checkbox"
@@ -1325,6 +1325,7 @@
     </div>
     <!-- /.modal modal--active -->
     <script src="https://unpkg.com/imask"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/glightbox.min.js"></script>
     <script src="js/main.js"></script>
