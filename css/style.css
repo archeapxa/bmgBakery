@@ -1797,6 +1797,11 @@ button.swiper-pagination-bullet {
   margin-bottom: 30px;
 }
 
+.reviews__slider {
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
 .reviews__slider-wrapper {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
