@@ -2292,4 +2292,11 @@ button.swiper-pagination-bullet {
     font-size: 12px;
     max-width: 150px;
   }
+  .modal__window {
+    padding: 40px 20px;
+    width: 90%;
+  }
+  .form__input-label {
+    font-size: 14px;
+  }
 }

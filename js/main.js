@@ -223,6 +223,7 @@ if (window.FormData) {
         if (request.status == 200 && request.status < 300) {
           swal("Заявка принята!", "Мы вам позвоним!", "success");
           modalToggle(); 
+          modalForm.reset();
         }
         else {
           swal("Oops", "Произошла ошибка.", "error");
@@ -254,6 +255,7 @@ if (window.FormData) {
         // 200 - 299 = успешная отправка данных!
         if (request.status == 200 && request.status < 300) {
           swal("Заявка принята!", "Мы вам позвоним!", "success");
+          formMain.reset();
         }
         else {
           swal("Oops", "Произошла ошибка.", "error");
