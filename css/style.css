@@ -1183,7 +1183,7 @@ button.swiper-pagination-bullet {
 
 .tab-container {
   position: relative;
-  height: 500px;
+  height: 550px;
 }
 
 .tab__input {
@@ -1598,7 +1598,7 @@ button.swiper-pagination-bullet {
 }
 
 .cakes__slider {
-  height: 100%;
+  height: 500px;
 }
 
 .cakes__slider-button {
@@ -1612,6 +1612,10 @@ button.swiper-pagination-bullet {
 
 .cakes__slider-button-next {
   right: 5px;
+}
+
+.cakes__slider-pagination {
+  bottom: 20px;
 }
 
 .cakes__card {
