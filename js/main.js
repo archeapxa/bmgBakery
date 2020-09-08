@@ -158,8 +158,7 @@ var cakesSliderBiscuit = new Swiper('.cakes__slider--biscuit', {
       slidesPerView: 2,
     }
   },
-
-})
+});
 
 
 // updating slider on tab change
@@ -175,6 +174,39 @@ cakesRadioGroup.forEach(radio => {
 const lightbox = GLightbox({ 
   touchNavigation: true,
 });
+
+
+var dessertSlider = new Swiper('.dessert__slider', {
+  loop: true,
+  slidesPerView: 1,
+  observer: true,
+  observeParents: true,
+
+  // If we need pagination
+  pagination: {
+    type: 'bullets',
+    dynamicBullets: 'true',
+    dynamicMainBullets: '3',
+    el: '.dessert__slider-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.dessert__slider-button-next',
+    prevEl: '.dessert__slider-button-prev',
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    1200: {
+      slidesPerView: 3,
+    },
+    767: {
+      slidesPerView: 2,
+    }
+  },
+});
+
 
 // phone masking
 const phone = document.getElementById('contact-us__phone');
