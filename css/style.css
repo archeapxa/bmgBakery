@@ -1650,6 +1650,8 @@ button.swiper-pagination-bullet {
 .macaroon__photo {
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .macaroon__photo-container {
@@ -2437,11 +2439,11 @@ button.swiper-pagination-bullet {
     padding-bottom: 0;
   }
   .hero__title {
-    font-size: 28px;
-    max-width: 300px;
+    font-size: 24px;
+    max-width: 260px;
   }
   .hero__image {
-    height: calc(100vh - 100px);
+    height: 450px;
   }
   .about-us__row {
     -webkit-box-align: center;
@@ -2519,6 +2521,6 @@ button.swiper-pagination-bullet {
     max-width: 300px;
   }
   .hero__image {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
   }
 }
